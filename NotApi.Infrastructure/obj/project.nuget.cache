@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iVqh+5+19lE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MONSTER\\NotApi\\NotApi.Infrastructure\\NotApi.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MONSTER\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

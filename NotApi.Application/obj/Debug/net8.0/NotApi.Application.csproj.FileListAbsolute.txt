@@ -1,0 +1,15 @@
+C:\Users\MONSTER\NotApi\NotApi.Application\bin\Debug\net8.0\NotApi.Application.deps.json
+C:\Users\MONSTER\NotApi\NotApi.Application\bin\Debug\net8.0\NotApi.Application.dll
+C:\Users\MONSTER\NotApi\NotApi.Application\bin\Debug\net8.0\NotApi.Application.pdb
+C:\Users\MONSTER\NotApi\NotApi.Application\bin\Debug\net8.0\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Application\bin\Debug\net8.0\NotApi.Domain.pdb
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.csproj.AssemblyReference.cache
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.AssemblyInfoInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.AssemblyInfo.cs
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.A.70016D9F.Up2Date
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.dll
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\refint\NotApi.Application.dll
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.pdb
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\ref\NotApi.Application.dll

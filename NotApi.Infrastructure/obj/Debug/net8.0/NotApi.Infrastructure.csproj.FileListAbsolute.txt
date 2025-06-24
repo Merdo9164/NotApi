@@ -1,0 +1,17 @@
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Infrastructure.deps.json
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Infrastructure.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Infrastructure.pdb
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Application.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Domain.pdb
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Application.pdb
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.AssemblyInfo.cs
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.I.A1BA39BA.Up2Date
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\refint\NotApi.Infrastructure.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.pdb
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\ref\NotApi.Infrastructure.dll

@@ -1,0 +1,11 @@
+C:\Users\MONSTER\NotApi\NotApi.Domain\bin\Debug\net8.0\NotApi.Domain.deps.json
+C:\Users\MONSTER\NotApi\NotApi.Domain\bin\Debug\net8.0\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Domain\bin\Debug\net8.0\NotApi.Domain.pdb
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.AssemblyInfoInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.AssemblyInfo.cs
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\refint\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.pdb
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\ref\NotApi.Domain.dll

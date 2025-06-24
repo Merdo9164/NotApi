@@ -1,0 +1,7 @@
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.csproj.AssemblyReference.cache
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.AssemblyInfoInputs.cache
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.AssemblyInfo.cs
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.csproj.CoreCompileInputs.cache
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MONSTER\NotApi\obj\Debug\net8.0\NotApi.MvcApplicationPartsAssemblyInfo.cache
