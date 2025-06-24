@@ -1,8 +1,13 @@
 using NotApi.Application.Interfaces;
 using NotApi.Infrastructure.Services;
 using FluentValidation.AspNetCore; // FluentValidation için extension metotlar
+using NotApi.Infrastructure.Contexts; // DbContext'i tanımak için
+using Microsoft.EntityFrameworkCore; // UseSqlServer için
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<NotDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 
