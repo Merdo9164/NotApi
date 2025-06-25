@@ -9,11 +9,18 @@ namespace NotApi.Infrastructure.Services
 {
     public class NotService : INotService
     {
-        private readonly List<Not> _notlar = new();
+        private readonly NotDbContext _context;
+
+        public NotService(NotDbContext context)
+        {
+    _       context = context;
+        }
+
 
         public List<NotDto> TumNotlariGetir()
         {
-            return _notlar.Select(n => new NotDto
+            return _context.Notlar
+            .Select(n => new NotDto
             {
                 Id = n.Id,
                 Deger = n.Deger,
@@ -23,7 +30,7 @@ namespace NotApi.Infrastructure.Services
 
         public NotDto? NotGetir(int id)
         {
-            var not = _notlar.FirstOrDefault(n => n.Id == id);
+            var not = _context.Notlar.Find(id);
             if (not == null) return null;
 
             return new NotDto
@@ -38,38 +45,38 @@ namespace NotApi.Infrastructure.Services
         {
             var yeniNot = new Not
             {
-                Id = _notlar.Count > 0 ? _notlar.Max(n => n.Id) + 1 : 1,
                 Deger = dto.Deger,
                 Aciklama = dto.Aciklama
             };
-            _notlar.Add(yeniNot);
 
-            return new NotDto
-            {
-                Id = yeniNot.Id,
-                Deger = yeniNot.Deger,
-                Aciklama = yeniNot.Aciklama
-            };
+                 _context.Notlar.Add(yeniNot);
+                _context.SaveChanges();
+
+                dto.Id = yeniNot.Id;
+                return dto;
         }
 
         public void NotGuncelle(int id, NotDto dto)
         {
-            var mevcut = _notlar.FirstOrDefault(n => n.Id == id);
+            var mevcut = _context.Notlar.Find(id);
             if (mevcut == null)
                 throw new Exception("Not bulunamadı.");
 
-            mevcut.Deger = dto.Deger;
-            mevcut.Aciklama = dto.Aciklama;
+                mevcut.Deger = dto.Deger;
+                mevcut.Aciklama = dto.Aciklama;
+                _context.SaveChanges();
         }
 
         public void NotSil(int id)
         {
-            var not = _notlar.FirstOrDefault(n => n.Id == id);
+            var not = _context.Notlar.Find(id);
             if (not == null)
                 throw new Exception("Not bulunamadı.");
 
-            _notlar.Remove(not);
+            _context.Notlar.Remove(not);
+            _context.SaveChanges();
         }
+
 
         public double OrtalamaHesapla(List<int> notlar)
         {
