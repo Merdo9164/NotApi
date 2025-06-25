@@ -9,3 +9,4 @@ C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.dll
 C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\refint\NotApi.Domain.dll
 C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.pdb
 C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\ref\NotApi.Domain.dll
+C:\Users\MONSTER\NotApi\NotApi.Domain\obj\Debug\net8.0\NotApi.Domain.sourcelink.json

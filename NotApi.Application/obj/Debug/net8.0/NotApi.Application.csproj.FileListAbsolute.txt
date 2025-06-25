@@ -13,3 +13,4 @@ C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.d
 C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\refint\NotApi.Application.dll
 C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.pdb
 C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\ref\NotApi.Application.dll
+C:\Users\MONSTER\NotApi\NotApi.Application\obj\Debug\net8.0\NotApi.Application.sourcelink.json

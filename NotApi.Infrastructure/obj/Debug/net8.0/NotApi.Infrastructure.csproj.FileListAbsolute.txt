@@ -15,3 +15,6 @@ C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastruc
 C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\refint\NotApi.Infrastructure.dll
 C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.pdb
 C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\ref\NotApi.Infrastructure.dll
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.sourcelink.json
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\bin\Debug\net8.0\NotApi.Infrastructure.runtimeconfig.json
+C:\Users\MONSTER\NotApi\NotApi.Infrastructure\obj\Debug\net8.0\NotApi.Infrastructure.genruntimeconfig.cache
