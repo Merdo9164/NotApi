@@ -2,6 +2,7 @@ using NotApi.Domain.Entities;
 using NotApi.Application.Dtos;
 using System.Collections.Generic;
 using NotApi.Application.Interfaces;
+using NotApi.Infrastructure.Data;
 using System.Linq;
 using System;
 
@@ -13,7 +14,7 @@ namespace NotApi.Infrastructure.Services
 
         public NotService(NotDbContext context)
         {
-    _       context = context;
+           _context = context;
         }
 
 
@@ -81,9 +82,10 @@ namespace NotApi.Infrastructure.Services
         public double OrtalamaHesapla(List<int> notlar)
         {
             if (notlar == null || notlar.Count == 0)
-                return 0;
+                throw new ArgumentException("Not listesi boş olamaz.");
 
             return notlar.Average();
         }
+
     }
 }
