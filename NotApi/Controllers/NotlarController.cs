@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using NotApi.Application.Interfaces;
 using NotApi.Application.Dtos;
-using NotApi.Application.Interfaces; 
-
 
 namespace NotApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class NotlarController : ControllerBase
     {
         private readonly INotService _notService;
@@ -17,77 +16,39 @@ namespace NotApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult TumNotlariGetir()
+        public async Task<IActionResult> TumNotlariGetir()
         {
-            var notlar = _notService.TumNotlariGetir();
+            var notlar = await _notService.TumNotlariGetirAsync();
             return Ok(notlar);
         }
 
         [HttpGet("{id}")]
-        public IActionResult NotGetir(int id)
+        public async Task<IActionResult> NotGetir(int id)
         {
-            var not = _notService.NotGetir(id);
-            if (not == null)
-                return NotFound();
-
+            var not = await _notService.NotGetirAsync(id);
+            if (not == null) return NotFound();
             return Ok(not);
         }
 
         [HttpPost]
-        public IActionResult NotEkle([FromBody] NotDto notDto)
+        public async Task<IActionResult> NotEkle([FromBody] NotDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var eklenenNot = _notService.NotEkle(notDto);
-            return CreatedAtAction(nameof(NotGetir), new { id = eklenenNot.Id }, eklenenNot);
+            var yeniNot = await _notService.NotEkleAsync(dto);
+            return CreatedAtAction(nameof(NotGetir), new { id = yeniNot.Id }, yeniNot);
         }
 
         [HttpPut("{id}")]
-        public IActionResult NotGuncelle(int id, [FromBody] NotDto notDto)
+        public async Task<IActionResult> NotGuncelle(int id, [FromBody] NotDto dto)
         {
-            try
-            {
-                _notService.NotGuncelle(id, notDto);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
+            await _notService.NotGuncelleAsync(id, dto);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult NotSil(int id)
+        public async Task<IActionResult> NotSil(int id)
         {
-            try
-            {
-                _notService.NotSil(id);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.Message);
-            }
-        }
-
-        [HttpPost("ortalama")]
-        public IActionResult OrtalamaHesapla([FromBody] List<int> notlar)
-        {
-            if (notlar == null || notlar.Count == 0)
-            {
-                return BadRequest("Not listesi boş olamaz.");
-            }
-
-            try
-            {
-                var ortalama = _notService.OrtalamaHesapla(notlar);
-                return Ok(new { Ortalama = ortalama });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Hata oluştu: {ex.Message}");
-            }
+            await _notService.NotSilAsync(id);
+            return NoContent();
         }
     }
 }

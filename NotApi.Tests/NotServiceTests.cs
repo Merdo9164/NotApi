@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Xunit;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace NotApi.Tests
 {
@@ -23,28 +24,29 @@ namespace NotApi.Tests
         }
 
         [Fact]
-        public void OrtalamaHesapla_DogruSonucVeriyor()
+        public async Task OrtalamaHesapla_DogruSonucVeriyor()
         {
             // Arrange
             var service = GetServiceWithInMemoryDb();
             var notlar = new List<int> { 70, 80, 90 };
 
             // Act
-            var sonuc = service.OrtalamaHesapla(notlar);
+            var sonuc = await service.OrtalamaHesaplaAsync(notlar);
 
             // Assert
             Assert.Equal(80, sonuc);
         }
 
         [Fact]
-        public void OrtalamaHesapla_BosListeHataFirlatir()
+        public async Task OrtalamaHesapla_BosListeHataFirlatir()
         {
             // Arrange
             var service = GetServiceWithInMemoryDb();
             var notlar = new List<int>();
 
             // Act & Assert
-            Assert.Throws<ArgumentException>(() => service.OrtalamaHesapla(notlar));
+            await Assert.ThrowsAsync<ArgumentException>(async () => 
+                await service.OrtalamaHesaplaAsync(notlar));
         }
     }
 }
